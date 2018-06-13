@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Runs a bootnode with ethereum official "alltools" image.
 #
@@ -23,5 +23,3 @@ docker run -d --name ethereum-bootnode \
     --network ethereum \
     $IMGNAME bootnode --nodekey /opt/bootnode/boot.key --verbosity=3 "$@"
 # --addr "$BOOTNODE_SERVICE:30301" "$@"
-
-
